@@ -52,9 +52,37 @@ d)    Construir un histograma y una gráfica de caja y bigote (boxplot).
 library(descriptr)
 
 ds_summary_stats(Voltajes)
+ds_freq_table(Voltajes, Medida1, bins=5)
 
+ds_freq_table(Voltajes, Medida2, bins=5)
+
+ds_freq_table(Voltajes, Medida3, bins=5)
+
+ds_freq_table(Voltajes, Medida4, bins=5)
+
+ds_freq_table(Voltajes, Medida5, bins=5)
+
+ds_plot_box_single(Voltajes, Medida1, Medida2, Medida3, Medida4, Medida5)
+k <- ds_freq_table(Voltajes, Medida1, 6)
+plot(k)
+f <- ds_freq_table(Voltajes, Medida2, 6)
+plot(f)
+r <- ds_freq_table(Voltajes, Medida3, 6)
+plot(r)
+e <- ds_freq_table(Voltajes, Medida4, 6)
+plot(e)
+l <- ds_freq_table(Voltajes, Medida5, 6)
+plot(l)
 ```
+Variabilidad de las medidas: Las medidas individuales (Medida1 a Medida5) varían en una amplia gama, desde valores tan bajos como 106 hasta tan altos como 123.2. Esto indica que hay una variabilidad significativa en los datos recopilados.
 
+Promedio general: El promedio general de todas las mediciones es de aproximadamente 119.8. Esto sugiere que, en promedio, las medidas tienden a estar alrededor de este valor.
+
+Diferencias entre medidas: Al observar las diferencias entre las medidas individuales en cada fila, se puede notar que a menudo hay fluctuaciones relativamente pequeñas de una medida a la siguiente en la misma fila. Sin embargo, también hay casos en los que las diferencias son más grandes, lo que indica una variabilidad considerable en la precisión de las mediciones o en las condiciones en las que se tomaron.
+
+Valores extremos: Algunas de las medidas individuales se destacan por ser significativamente más bajas o más altas que las demás en la misma fila. Por ejemplo, la medida 106 y 123.2 son valores atípicos en el conjunto de datos y pueden ser el resultado de errores de medición o condiciones excepcionales.
+
+Tendencias a lo largo del tiempo: No se proporciona información sobre cuándo se tomaron estas mediciones, pero si representan mediciones en el tiempo, se podría investigar si hay alguna tendencia a lo largo del tiempo. Por ejemplo, si las medidas están aumentando o disminuyendo gradualmente con el tiempo.
 
 ### Descripción del paquete descriptr
 

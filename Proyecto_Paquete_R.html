@@ -85,7 +85,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#actividades-a-desarrollar" id="toc-actividades-a-desarrollar" class="nav-link" data-scroll-target="#actividades-a-desarrollar"><span class="header-section-number">2</span> Actividades a desarrollar</a></li>
   <li><a href="#resultados-y-su-interpretación" id="toc-resultados-y-su-interpretación" class="nav-link" data-scroll-target="#resultados-y-su-interpretación"><span class="header-section-number">3</span> Resultados y su interpretación</a>
   <ul class="collapse">
-  <li><a href="#descripción-del-paquete-xxxxx" id="toc-descripción-del-paquete-xxxxx" class="nav-link" data-scroll-target="#descripción-del-paquete-xxxxx"><span class="header-section-number">3.1</span> Descripción del paquete XXXXX</a></li>
+  <li><a href="#descripción-del-paquete-descriptr" id="toc-descripción-del-paquete-descriptr" class="nav-link" data-scroll-target="#descripción-del-paquete-descriptr"><span class="header-section-number">3.1</span> Descripción del paquete descriptr</a></li>
   <li><a href="#medidas-estadísticas" id="toc-medidas-estadísticas" class="nav-link" data-scroll-target="#medidas-estadísticas"><span class="header-section-number">3.2</span> Medidas estadísticas</a></li>
   <li><a href="#distribución-de-frecuencias" id="toc-distribución-de-frecuencias" class="nav-link" data-scroll-target="#distribución-de-frecuencias"><span class="header-section-number">3.3</span> Distribución de frecuencias</a></li>
   <li><a href="#gráficas" id="toc-gráficas" class="nav-link" data-scroll-target="#gráficas"><span class="header-section-number">3.4</span> Gráficas</a></li>
@@ -681,9 +681,174 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    9                         117.46        4                         122.08 
    28                        117.62        8                         121.46 </code></pre>
 </div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds_freq_table</span>(Voltajes, Medida1, <span class="at">bins=</span><span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>                              Variable: Medida1                               
+|---------------------------------------------------------------------------|
+|      Bins       | Frequency | Cum Frequency |   Percent    | Cum Percent  |
+|---------------------------------------------------------------------------|
+| 105.1  - 108.7  |     1     |       1       |     3.33     |     3.33     |
+|---------------------------------------------------------------------------|
+| 108.7  - 112.3  |     3     |       4       |      10      |    13.33     |
+|---------------------------------------------------------------------------|
+| 112.3  -  116   |     1     |       5       |     3.33     |    16.67     |
+|---------------------------------------------------------------------------|
+|  116   - 119.6  |     6     |      11       |      20      |    36.67     |
+|---------------------------------------------------------------------------|
+| 119.6  - 123.2  |    19     |      30       |    63.33     |     100      |
+|---------------------------------------------------------------------------|
+|      Total      |    30     |       -       |    100.00    |      -       |
+|---------------------------------------------------------------------------|</code></pre>
 </div>
-<section id="descripción-del-paquete-xxxxx" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="descripción-del-paquete-xxxxx"><span class="header-section-number">3.1</span> Descripción del paquete XXXXX</h3>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds_freq_table</span>(Voltajes, Medida2, <span class="at">bins=</span><span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>                              Variable: Medida2                               
+|---------------------------------------------------------------------------|
+|      Bins       | Frequency | Cum Frequency |   Percent    | Cum Percent  |
+|---------------------------------------------------------------------------|
+|  106   - 109.4  |     3     |       3       |      10      |      10      |
+|---------------------------------------------------------------------------|
+| 109.4  - 112.8  |     0     |       3       |      0       |      10      |
+|---------------------------------------------------------------------------|
+| 112.8  - 116.1  |     1     |       4       |     3.33     |    13.33     |
+|---------------------------------------------------------------------------|
+| 116.1  - 119.5  |     5     |       9       |    16.67     |      30      |
+|---------------------------------------------------------------------------|
+| 119.5  - 122.9  |    21     |      30       |      70      |     100      |
+|---------------------------------------------------------------------------|
+|      Total      |    30     |       -       |    100.00    |      -       |
+|---------------------------------------------------------------------------|</code></pre>
+</div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds_freq_table</span>(Voltajes, Medida3, <span class="at">bins=</span><span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>                              Variable: Medida3                               
+|---------------------------------------------------------------------------|
+|      Bins       | Frequency | Cum Frequency |   Percent    | Cum Percent  |
+|---------------------------------------------------------------------------|
+|  109   - 111.8  |     2     |       2       |     6.67     |     6.67     |
+|---------------------------------------------------------------------------|
+| 111.8  - 114.5  |     0     |       2       |      0       |     6.67     |
+|---------------------------------------------------------------------------|
+| 114.5  - 117.3  |     1     |       3       |     3.33     |      10      |
+|---------------------------------------------------------------------------|
+| 117.3  -  120   |    11     |      14       |    36.67     |    46.67     |
+|---------------------------------------------------------------------------|
+|  120   - 122.8  |    16     |      30       |    53.33     |     100      |
+|---------------------------------------------------------------------------|
+|      Total      |    30     |       -       |    100.00    |      -       |
+|---------------------------------------------------------------------------|</code></pre>
+</div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds_freq_table</span>(Voltajes, Medida4, <span class="at">bins=</span><span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>                             Variable: Medida4                              
+|-------------------------------------------------------------------------|
+|     Bins      | Frequency | Cum Frequency |   Percent    | Cum Percent  |
+|-------------------------------------------------------------------------|
+| 107.1 - 110.3 |     3     |       3       |      10      |      10      |
+|-------------------------------------------------------------------------|
+| 110.3 - 113.5 |     0     |       3       |      0       |      10      |
+|-------------------------------------------------------------------------|
+| 113.5 - 116.7 |     0     |       3       |      0       |      10      |
+|-------------------------------------------------------------------------|
+| 116.7 - 119.9 |     9     |      12       |      30      |      40      |
+|-------------------------------------------------------------------------|
+| 119.9 - 123.1 |    18     |      30       |      60      |     100      |
+|-------------------------------------------------------------------------|
+|     Total     |    30     |       -       |    100.00    |      -       |
+|-------------------------------------------------------------------------|</code></pre>
+</div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds_freq_table</span>(Voltajes, Medida5, <span class="at">bins=</span><span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>                              Variable: Medida5                               
+|---------------------------------------------------------------------------|
+|      Bins       | Frequency | Cum Frequency |   Percent    | Cum Percent  |
+|---------------------------------------------------------------------------|
+| 110.7  - 113.2  |     1     |       1       |     3.33     |     3.33     |
+|---------------------------------------------------------------------------|
+| 113.2  - 115.7  |     0     |       1       |      0       |     3.33     |
+|---------------------------------------------------------------------------|
+| 115.7  - 118.1  |     2     |       3       |     6.67     |      10      |
+|---------------------------------------------------------------------------|
+| 118.1  - 120.6  |    16     |      19       |    53.33     |    63.33     |
+|---------------------------------------------------------------------------|
+| 120.6  - 123.1  |    11     |      30       |    36.67     |     100      |
+|---------------------------------------------------------------------------|
+|      Total      |    30     |       -       |    100.00    |      -       |
+|---------------------------------------------------------------------------|</code></pre>
+</div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ds_plot_box_single</span>(Voltajes, Medida1, Medida2, Medida3, Medida4, Medida5)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="Proyecto_Paquete_R_files/figure-html/unnamed-chunk-2-1.jpeg" class="img-fluid"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="Proyecto_Paquete_R_files/figure-html/unnamed-chunk-2-2.jpeg" class="img-fluid"></p>
+</div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>k <span class="ot">&lt;-</span> <span class="fu">ds_freq_table</span>(Voltajes, Medida1, <span class="dv">6</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(k)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="Proyecto_Paquete_R_files/figure-html/unnamed-chunk-2-3.jpeg" class="img-fluid"></p>
+</div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="fu">ds_freq_table</span>(Voltajes, Medida2, <span class="dv">6</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(f)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="Proyecto_Paquete_R_files/figure-html/unnamed-chunk-2-4.jpeg" class="img-fluid"></p>
+</div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">ds_freq_table</span>(Voltajes, Medida3, <span class="dv">6</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(r)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="Proyecto_Paquete_R_files/figure-html/unnamed-chunk-2-5.jpeg" class="img-fluid"></p>
+</div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>e <span class="ot">&lt;-</span> <span class="fu">ds_freq_table</span>(Voltajes, Medida4, <span class="dv">6</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(e)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="Proyecto_Paquete_R_files/figure-html/unnamed-chunk-2-6.jpeg" class="img-fluid"></p>
+</div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>l <span class="ot">&lt;-</span> <span class="fu">ds_freq_table</span>(Voltajes, Medida5, <span class="dv">6</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(l)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="Proyecto_Paquete_R_files/figure-html/unnamed-chunk-2-7.jpeg" class="img-fluid"></p>
+</div>
+</div>
+<p>Variabilidad de las medidas: Las medidas individuales (Medida1 a Medida5) varían en una amplia gama, desde valores tan bajos como 106 hasta tan altos como 123.2. Esto indica que hay una variabilidad significativa en los datos recopilados.</p>
+<p>Promedio general: El promedio general de todas las mediciones es de aproximadamente 119.8. Esto sugiere que, en promedio, las medidas tienden a estar alrededor de este valor.</p>
+<p>Diferencias entre medidas: Al observar las diferencias entre las medidas individuales en cada fila, se puede notar que a menudo hay fluctuaciones relativamente pequeñas de una medida a la siguiente en la misma fila. Sin embargo, también hay casos en los que las diferencias son más grandes, lo que indica una variabilidad considerable en la precisión de las mediciones o en las condiciones en las que se tomaron.</p>
+<p>Valores extremos: Algunas de las medidas individuales se destacan por ser significativamente más bajas o más altas que las demás en la misma fila. Por ejemplo, la medida 106 y 123.2 son valores atípicos en el conjunto de datos y pueden ser el resultado de errores de medición o condiciones excepcionales.</p>
+<p>Tendencias a lo largo del tiempo: No se proporciona información sobre cuándo se tomaron estas mediciones, pero si representan mediciones en el tiempo, se podría investigar si hay alguna tendencia a lo largo del tiempo. Por ejemplo, si las medidas están aumentando o disminuyendo gradualmente con el tiempo.</p>
+<section id="descripción-del-paquete-descriptr" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="descripción-del-paquete-descriptr"><span class="header-section-number">3.1</span> Descripción del paquete descriptr</h3>
 </section>
 <section id="medidas-estadísticas" class="level3" data-number="3.2">
 <h3 data-number="3.2" class="anchored" data-anchor-id="medidas-estadísticas"><span class="header-section-number">3.2</span> Medidas estadísticas</h3>
