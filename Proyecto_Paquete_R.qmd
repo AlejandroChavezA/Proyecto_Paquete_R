@@ -1,0 +1,71 @@
+---
+format: 
+  html:
+    theme: cerulean
+    toc: true
+    toc-location: left
+    number-sections: true
+    code-fold: true
+    code-overflow: wrap
+    fig-align: center
+    fig-format: jpeg
+    fig-responsive: true
+    
+execute: 
+  echo: true
+  warning: false
+---
+## Planteamiento del caso
+La tensión eléctrica es una magnitud física que cuantifica la diferencia de potencial eléctrico entre dos puntos, permitiendo el flujo de corriente eléctrica entre ellos. Su unidad de medida es el voltio. En México, la Comisión Federal de Electricidad (CFE) indica que el voltaje debe oscilar entre 108 y 132, de lo contrario, se pueden generar daños en aparatos electrodomésticos.
+
+En una institución universitaria, se realizó un estudio con el objetivo de analizar el grado de cumplimiento con el estándar indicado por la CFE. Para tal efecto, se realizaron las siguientes actividades:
+
+1.    De los edificios E, B, F, G, D, O, se seleccionó una aula al azar. 
+2.    En cada aula, se eligieron de forma aleatoria cinco tomas de corriente eléctrica $(TC_1, TC_2, TC_3, TC_4, TC_5)$[^1] y se realizaron cinco mediciones de la tensión eléctrica en cada una. 
+3.    Posteriormente, se calculó el promedio de las cinco medidas. Los resultados se registraron en la hoja de cálculo que se adjunta (voltajes.xlsx)
+
+[^1]: Toma de corriente
+
+```{r}
+#|label: Datos
+
+library(readxl)
+Voltajes <- read_excel("Voltajes.xlsx", sheet = "Voltajes")
+
+library(kableExtra)
+kable(Voltajes, booktabs = T, longtable = T, caption = "Registro de medidas de voltaje")
+
+
+
+```
+
+## Actividades a desarrollar
+a)    Describir el paquete descriptr de R asignado.
+b)    Para la columna del promedio de voltaje, obtener:  Mo, Md, $\bar x$, $\bar x_{10\%}$, R, S, CV, $Q_1$ $(Q_3)$, Sesgo y Curtosis.
+c)    Elaborar una tabla de distribución de frecuencias.
+d)    Construir un histograma y una gráfica de caja y bigote (boxplot).
+
+## Resultados y su interpretación
+
+```{r}
+
+library(descriptr)
+
+ds_summary_stats(Voltajes)
+
+```
+
+
+### Descripción del paquete descriptr
+
+
+### Medidas estadísticas
+
+
+### Distribución de frecuencias
+
+
+### Gráficas
+
+
+## Conclusiones
